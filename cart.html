@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - EcoBite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">EcoBite</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cart">
+        <div class="container">
+            <h2>Shopping Cart</h2>
+            
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be loaded dynamically -->
+                </tbody>
+            </table>
+            
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            
+            <div style="text-align: right;">
+                <a href="#" class="checkout-btn">Proceed to Checkout</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 EcoBite Edible Cutlery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
